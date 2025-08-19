@@ -13,8 +13,8 @@ const server = http.createServer(app)
 const io = new Server(server, {
   cors: {
     origin: [
-      'http://localhost:5173',
-      'http://localhost:5174'
+      'https://admin-shop-zone.onrender.com',
+      'https://shop-zone-espp.onrender.com'
     ],
     credentials: true,
   }
@@ -23,8 +23,8 @@ const io = new Server(server, {
 app.use(
   cors({
     origin: [
-      'http://localhost:5173',
-      'http://localhost:5174'
+      'https://admin-shop-zone.onrender.com',
+      'https://shop-zone-espp.onrender.com'
     ],
     credentials: true,
   })
