@@ -1,4 +1,4 @@
 
 // frontend url 
-const api_F = 'http://localhost:5173'
+const api_F = 'https://shop-zone-espp.onrender.com'
 module.exports = api_F
