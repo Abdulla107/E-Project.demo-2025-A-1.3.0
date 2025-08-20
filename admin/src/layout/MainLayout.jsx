@@ -84,16 +84,12 @@ const MainLayout = () => {
 
             if (recevedMessage.senderId) {
                 dispatch(total_unSeen_message_update(recevedMessage.senderId));
-
-                if (unSeen_message.length < 1) {
-                    dispatch(get_unSeen_message());
-                }
             }
 
         }
 
         setRecevedMessage('');
-    }, [recevedMessage, pathname, senderMessageCount, total_unSeen_message]);
+    }, [recevedMessage, pathname]);
 
 
 
