@@ -390,3 +390,74 @@ export const footerColors = {
   bottomText: 'text-gray-400'
 };
 
+
+export const loginColors = {
+  loader_bg: "bg-[#38303033]",
+  loader_icon: "#6366F1",
+
+  page_bg: "bg-gradient-to-br from-blue-700 via-purple-700 to-indigo-700",
+  card_bg: "bg-white/90",
+  card_text: "text-gray-800",
+  card_subtext: "text-gray-600",
+
+  input_border: "border-gray-300",
+  input_icon: "text-gray-400",
+  input_focus: "focus:ring-indigo-500",
+
+  password_icon: "text-indigo-500 hover:text-indigo-700",
+
+  button_bg: "bg-indigo-600 hover:bg-indigo-700 text-white",
+
+  link_text: "text-indigo-600",
+  link_hover: "hover:underline",
+};
+
+
+export const resetPasswordColors = {
+  loader_bg: "bg-[#38303033] bg-opacity-40",
+  loader_icon: "#6366F1",
+
+  gradient_bg: "bg-gradient-to-br from-blue-700 via-purple-700 to-indigo-700",
+
+  card_bg: "bg-white/90",
+  card_text: "text-gray-800",
+  card_subtext: "text-gray-500",
+
+  input_border: "border border-gray-300",
+  input_focus: "focus:ring-indigo-500",
+
+  icon: "text-gray-400",
+
+  password_icon: "text-indigo-500 hover:text-indigo-700",
+
+  button_bg: "bg-indigo-600 hover:bg-indigo-700",
+  button_text: "text-white",
+
+  link_text: "text-indigo-600 hover:underline",
+  remember_text: "text-gray-600"
+};
+
+
+export const registerColors = {
+  loaderBg: "bg-[#38303033] bg-opacity-40",
+  loaderIcon: "#6366F1",
+
+  pageBg: "bg-gradient-to-br from-blue-700 via-purple-700 to-indigo-700",
+
+  cardBg: "bg-white/90",
+  cardText: "text-gray-800",
+  cardSubText: "text-gray-500",
+
+  inputBorder: "border-gray-300",
+  inputFocus: "focus:ring-indigo-500",
+
+  icon: "text-gray-400",
+
+  passwordToggle: "text-indigo-500 hover:text-indigo-700",
+
+  buttonBg: "bg-indigo-600 hover:bg-indigo-700 text-white",
+
+  linkText: "text-indigo-600 hover:underline",
+  linkMuted: "text-gray-600",
+};
+
