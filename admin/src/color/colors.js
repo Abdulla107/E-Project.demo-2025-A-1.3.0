@@ -397,3 +397,21 @@ export const change_password_color = {
         active_btn: 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white'
     }
 }
+
+
+export const loginColors = {
+  loaderOverlay: "bg-[#38303033] bg-opacity-40",
+  loaderColor: "#6366F1",
+
+  wrapperBg: "bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-600",
+  cardBg: "bg-white/90",
+  cardText: "text-gray-800",
+  subtitleText: "text-gray-600",
+
+  inputBorder: "border border-gray-300",
+  inputIcon: "text-gray-400",
+  inputFocus: "focus:ring-2 focus:ring-indigo-500",
+
+  toggleBtn: "text-indigo-600 hover:text-indigo-800",
+  loginBtn: "bg-indigo-600 hover:bg-indigo-700 text-white",
+};
