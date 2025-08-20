@@ -14,13 +14,7 @@ const Message_N_Dropdown = () => {
     const [messageOpen, setMessageOpen] = useState(false);
     const [recevedMessage, setRecevedMessage] = useState('');
 
-    const {
-        total_unSeen_message,
-        unSeen_message,
-        message_senderImage,
-        senderMessageCount,
-        loader
-    } = useSelector((state) => state.chat);
+    const { total_unSeen_message, unSeen_message, message_senderImage, senderMessageCount, loader } = useSelector((state) => state.chat);
 
     const handleNavigate = useCallback((e, senderId) => {
         e.preventDefault();
@@ -35,15 +29,18 @@ const Message_N_Dropdown = () => {
 
         socket.on('received_user_message', handleMessage);
 
-        if (messageOpen && recevedMessage) {
-            dispatch(get_unSeen_message());
-            setRecevedMessage('');
-        }
-
         return () => {
             socket.off('received_user_message', handleMessage);
         };
     }, [messageOpen, recevedMessage]);
+
+    useEffect(() => {
+         if (messageOpen && recevedMessage) {
+            dispatch(get_unSeen_message());
+            setRecevedMessage('');
+        }
+
+    },[messageOpen, unSeen_message, recevedMessage])
 
     const panel = message_sideber?.sidebar_panel || ''
     const avatar = message_sideber?.avatar || ''
