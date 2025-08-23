@@ -98,7 +98,7 @@ const MainLayout = () => {
             {/* Sidebar */}
             <div className={`rounded-md z-50 max-lg:absolute w-[220px] max-lg:ml-4 ${page_color?.bg} transition-all duration-300 ${showSidebar ? '-left-4' : '-left-[360px]'}`}>
                 <div className={`flex justify-between p-4 max-lg:text-xl border-b-4 ${sidebar?.header}`}>
-                    <span className='lg:text-2xl'>My app</span>
+                    <span className='lg:text-2xl'>Super Admin</span>
                     <span onClick={() => setShowSidebar(false)} className={`cursor-pointer p-1 lg:hidden ${sidebar?.bt_IoClose}`}><IoClose /></span>
                 </div>
                 <ul className={`px-4 pt-3 pb-36  overflow-y-auto scrollbar-thick h-screen ${sidebar?.menuItems_c}`}>
