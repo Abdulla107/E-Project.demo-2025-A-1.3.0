@@ -8,6 +8,6 @@ router.post('/category/add-category',adminMiddleware, categoryController.categor
 router.post('/category/delete_category',adminMiddleware, categoryController.category_delete)
 
 // admin and user
-router.get('/category/get-category',authMiddleware, categoryController.category_get)
+router.get('/category/get-category', categoryController.category_get)
 
 module.exports = router;
