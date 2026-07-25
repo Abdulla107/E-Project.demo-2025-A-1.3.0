@@ -1,0 +1,35 @@
+To run this code Locality: -
+
+1. Run the (npm i or npm install) command in E-Project.demo-2025-A-1.3.0/(admin, user and server) to install all the required packages
+
+2. Go inside these files (admin/src/api/api.js) and (user/src/api/api.js) and replace baseURL with production with local or back end url, for example: (http://localhost:5000')
+
+3. Go inside these files server/ap/api_B.js and change the url of api_B (api_B = 'https://e-project-demo-2025-a-1-3-0-serve.onrender.com') to back end or server url, for example: (http://localhost:5000')
+
+4. Go inside these files server/ap/api_F.js and replace api_F (api_F = 'https://shop-zone-espp.onrender.com') Change the url to the frontend, that is, the URL that the user is running on, for example: (http://localhost:3000')
+
+5. Go to the server/index.js files and write
+
+(a) const io = new Server(server, {
+cors: {
+origin: [
+'https://admin-shop-zone.onrender.com',
+'https://shop-zone-espp.onrender.com'
+],
+credentials: true,
+}
+});
+
+(b) app.use(
+cors({
+origin: [
+'https://admin-shop-zone.onrender.com',
+'https://shop-zone-espp.onrender.com'
+],
+credentials: true,
+})
+)
+
+** In a and b, change the URLs of origin: ['', ''] to admin and user urls
+
+6. Go inside the server/.env file and fill in all the fields, for example (mongoDB URL, CLOUD_NAME etc.)
